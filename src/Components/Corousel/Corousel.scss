@@ -1,0 +1,71 @@
+@media only screen and (min-width: 600px) {
+  .Carousel {
+    width: "100%";
+    height: "243px";
+    overflow: "hidden !important";
+  }
+  .corousel-img {
+    height: 200px;
+    margin-top: 0px;
+  }
+  .corousel-img1 {
+    height: 200px;
+    margin-top: 0px;
+    margin-left: 148px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .Carousel {
+    width: "100%";
+    height: "439px";
+    overflow: "hidden !important";
+  }
+  .corousel-img {
+    height: 187px;
+    margin-top: 0%;
+    margin-left: 0px;
+  }
+  .corousel-img1 {
+    width: 159px;
+    height: 187px;
+    margin-left: 148px;
+    margin-top: -52%;
+    margin-left: 201px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .Carousel {
+    width: "100%";
+    height: "252px";
+    overflow: "hidden !important";
+  }
+  .corousel-img {
+    width: 134px;
+    height: 172px;
+    margin-top: 52px;
+  }
+  .corousel-img1 {
+    width: 134px;
+    height: 172px;
+    margin-top: 52px;
+    margin-left: 56px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .Carousel {
+    width: "100%";
+    height: "243px";
+    overflow: "hidden !important";
+  }
+  .corousel-img {
+    width: 150px;
+    height: 200px;
+    margin-top: 7px;
+  }
+  .corousel-img1 {
+    width: 150x;
+    height: 200px;
+    margin-top: 7px;
+    margin-left: 148px;
+  }
+}

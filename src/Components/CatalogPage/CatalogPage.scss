@@ -1,0 +1,306 @@
+$border-radius: 20px;
+
+$primary: #556;
+$base: #071739;
+$shadow-color: #8c8c8c;
+$lighter-shadow: rgba($shadow-color, 0.2);
+$white: #fff;
+$gray: #8c8c8c;
+$lighter-gray: rgba($gray, 0.1);
+$time-line-width: 240px;
+$transition: 0.3s all ease;
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+@mixin dragIndicator($property, $background, $z-index) {
+  #{$property} {
+    position: absolute;
+    top: 0;
+    z-index: $z-index;
+    width: 0;
+    height: 5px;
+    border-radius: 5px;
+    background: $background;
+    &:hover {
+      &::before {
+        opacity: 1;
+      }
+      &::after {
+        opacity: 1;
+      }
+    }
+    &::before {
+      opacity: 0;
+      content: attr(data-content);
+      display: block;
+      position: absolute;
+      top: -40px;
+      right: -23px;
+      width: 40px;
+      padding: 3px;
+      text-align: center;
+      color: white;
+      background: $shadow-color;
+      border-radius: $border-radius;
+    }
+    &::after {
+      opacity: 0;
+      content: "";
+      display: block;
+      position: absolute;
+      top: -18px;
+      right: -8px;
+      border-top: 8px solid $shadow-color;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+    }
+    #{$property}-drag {
+      position: absolute;
+      right: -7.5px;
+      top: -5px;
+
+      width: 15px;
+      height: 15px;
+
+      border-radius: 50%;
+      background: $base;
+      transition: all 0.3s;
+      &:hover {
+        box-shadow: 0 0 0 6px $lighter-shadow;
+      }
+    }
+  }
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  color: $base;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: $lighter-gray;
+
+  .current-value {
+    width: 100%;
+
+    label {
+      display: inline-flex;
+      width: 50px;
+      font-size: 20px;
+    }
+  }
+
+  #slider {
+    position: relative;
+    margin: 0 auto;
+    // width: $time-line-width;
+    height: 8px;
+    background: $primary;
+    border-radius: 8px;
+    cursor: pointer;
+
+    @include dragIndicator("#min", $primary, 2);
+    @include dragIndicator("#max", $shadow-color, 1);
+  }
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px $primary;
+}
+
+@media only screen and (min-width: 600px) {
+  .breadcrumb {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    list-style: none;
+    background-color: #f3f3f3;
+  }
+  .pagination {
+    margin-top: 24px;
+  }
+  .page-link,
+  .page-item.active {
+    color: #fff;
+    background-color: gray;
+    border-radius: 0.125rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+      0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    transition: all 0.2s linear;
+  }
+  a {
+    color: black;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+  }
+
+  a:hover {
+    color: gray;
+  }
+  .pagination .page-item.active .page-link:hover {
+    background-color: gray;
+  }
+  .dropdown {
+    outline: 0;
+    box-shadow: none;
+    text-transform: capitalize;
+  }
+  .dropdown:hover {
+    outline: 0;
+    box-shadow: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .breadcrumb {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    list-style: none;
+    background-color: #f3f3f3;
+  }
+  .pagination {
+    margin-top: 24px;
+  }
+  .page-link,
+  .page-item.active {
+    color: #fff;
+    background-color: gray;
+    border-radius: 0.125rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+      0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    transition: all 0.2s linear;
+  }
+  a {
+    color: black;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+  }
+
+  a:hover {
+    color: gray;
+  }
+  .pagination .page-item.active .page-link:hover {
+    background-color: gray;
+  }
+  .dropdown {
+    outline: 0;
+    box-shadow: none;
+    text-transform: capitalize;
+  }
+  .dropdown:hover {
+    outline: 0;
+    box-shadow: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .breadcrumb {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    list-style: none;
+    background-color: #f3f3f3;
+  }
+  .pagination {
+    margin-top: 84px;
+  }
+  .page-link,
+  .page-item.active {
+    color: #fff;
+    background-color: gray;
+    border-radius: 0.125rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+      0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    transition: all 0.2s linear;
+  }
+  a {
+    color: black;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+  }
+
+  a:hover {
+    color: gray;
+  }
+  .pagination .page-item.active .page-link:hover {
+    background-color: gray;
+  }
+  .dropdown {
+    outline: 0;
+    box-shadow: none;
+    text-transform: capitalize;
+  }
+  .dropdown:hover {
+    outline: 0;
+    box-shadow: none;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .breadcrumb {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    list-style: none;
+    background-color: #f3f3f3;
+  }
+  .pagination {
+    margin-top: 36px;
+  }
+  .page-link,
+  .page-item.active {
+    color: #fff;
+    background-color: gray;
+    border-radius: 0.125rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+      0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    transition: all 0.2s linear;
+  }
+  a {
+    color: black;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+  }
+
+  a:hover {
+    color: gray;
+  }
+  .pagination .page-item.active .page-link:hover {
+    background-color: gray;
+  }
+
+  .dropdown {
+    outline: 0;
+    box-shadow: none;
+    text-transform: capitalize;
+  }
+  .dropdown:hover {
+    outline: 0;
+    box-shadow: none;
+  }
+}

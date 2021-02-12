@@ -1,0 +1,138 @@
+@media only screen and (min-width: 600px) {
+  #Variety {
+    height: 80px;
+    width: 80px;
+
+    margin-top: 10px;
+    border-style: groove;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  #number {
+    width: 45px;
+    margin-top: 5px;
+    text-align: center;
+  }
+  #counter {
+    margin-top: 5px;
+    margin-left: 75px;
+  }
+  .containerblock {
+    height: 180px;
+    width: 200px;
+    background-color: #fff;
+    margin-top: 25px;
+  }
+  #buttonblock {
+    width: 30px;
+  }
+  .DiscountOptions {
+    width: 250px;
+    height: 100px;
+    margin-top: 11px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #Variety {
+    height: 80px;
+    width: 80px;
+
+    margin-top: 10px;
+    border-style: groove;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  #number {
+    width: 45px;
+    margin-top: 5px;
+    text-align: center;
+  }
+  #counter {
+    margin-top: 5px;
+    margin-left: 75px;
+  }
+  .containerblock {
+    height: 180px;
+    width: 200px;
+    background-color: #fff;
+    margin-top: 25px;
+  }
+  #buttonblock {
+    width: 30px;
+  }
+  .DiscountOptions {
+    width: 250px;
+    height: 100px;
+    margin-top: 11px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #Variety {
+    height: 80px;
+    width: 80px;
+
+    margin-top: 10px;
+    border-style: groove;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  #number {
+    width: 45px;
+    margin-top: 5px;
+    text-align: center;
+  }
+  #counter {
+    margin-top: 5px;
+    margin-left: 75px;
+  }
+  .containerblock {
+    height: 180px;
+    width: 200px;
+    background-color: #fff;
+    margin-top: 25px;
+  }
+  #buttonblock {
+    width: 30px;
+  }
+  .DiscountOptions {
+    width: 250px;
+    height: 100px;
+    margin-top: -180px;
+    margin-left: 240px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #Variety {
+    height: 80px;
+    width: 80px;
+    margin-left: -75px;
+    margin-top: 94px;
+    border-style: groove;
+    margin-right: 112px;
+    border-radius: 5px;
+  }
+  #number {
+    width: 45px;
+    margin-top: 5px;
+    text-align: center;
+  }
+  #counter {
+    margin-top: 5px;
+    margin-left: 75px;
+  }
+  .containerblock {
+    height: 180px;
+    width: 200px;
+    background-color: #fff;
+    margin-top: 25px;
+  }
+  #buttonblock {
+    width: 30px;
+  }
+  .DiscountOptions {
+    width: 250px;
+    height: 100px;
+    margin-top: -180px;
+    margin-left: 240px;
+  }
+}

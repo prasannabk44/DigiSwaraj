@@ -1,0 +1,128 @@
+@media only screen and (min-width: 600px) {
+  .categories {
+    width: 100%;
+  }
+  .category-description {
+    font-size: small;
+  }
+
+  #category-container {
+    border: 1px solid rgb(204, 204, 204);
+    cursor: pointer;
+    &:hover {
+      background-color: adjust-color(
+        $color: lightgrey,
+        $hue: 0,
+        $saturation: 0%,
+        $lightness: 0%,
+        $alpha: 1
+      );
+    }
+    .img {
+      height: 60px;
+      width: 60px;
+      padding-bottom: 6px;
+    }
+  }
+
+  .text-left {
+    margin-top: 20px;
+    margin-left: 22px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .categories {
+    width: 100%;
+  }
+  .category-description {
+    font-size: small;
+  }
+
+  #category-container {
+    border: 1px solid rgb(204, 204, 204);
+    cursor: pointer;
+    &:hover {
+      background-color: adjust-color(
+        $color: lightgrey,
+        $hue: 0,
+        $saturation: 0%,
+        $lightness: 0%,
+        $alpha: 1
+      );
+    }
+    .img {
+      height: 60px;
+      width: 60px;
+      padding-bottom: 6px;
+    }
+  }
+
+  .text-left {
+    margin-top: 20px;
+    margin-left: 22px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .categories {
+    width: 100%;
+  }
+  .category-description {
+    font-size: small;
+  }
+
+  #category-container {
+    border: 1px solid rgb(204, 204, 204);
+    cursor: pointer;
+    &:hover {
+      background-color: adjust-color(
+        $color: lightgrey,
+        $hue: 0,
+        $saturation: 0%,
+        $lightness: 0%,
+        $alpha: 1
+      );
+    }
+    .img {
+      height: 60px;
+      width: 60px;
+      padding-bottom: 6px;
+    }
+  }
+
+  .text-left {
+    margin-top: 20px;
+    margin-left: -30px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .categories {
+    width: 100%;
+  }
+  .category-description {
+    font-size: small;
+  }
+
+  #category-container {
+    border: 1px solid rgb(204, 204, 204);
+    cursor: pointer;
+    &:hover {
+      background-color: adjust-color(
+        $color: lightgrey,
+        $hue: 0,
+        $saturation: 0%,
+        $lightness: 0%,
+        $alpha: 1
+      );
+    }
+    .img {
+      height: 60px;
+      width: 60px;
+      padding-bottom: 6px;
+    }
+  }
+
+  // .text-left {
+  //   margin-top: 20px;
+  //   margin-left: -30px;
+  // }
+}

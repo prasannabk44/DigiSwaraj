@@ -1,0 +1,92 @@
+@media only screen and (min-width: 600px) {
+  .corousel-text-container {
+    height: 262px;
+    padding: 30px;
+    font-weight: 600;
+    // background-color: rgb(204, 204, 204);
+    margin: auto;
+  }
+
+  .logo-text {
+    margin-top: 30px;
+    font-size: 28px;
+  }
+
+  .sub-logo-text {
+    font-size: 14px;
+  }
+
+  .description-text {
+    color: #ff8601;
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .corousel-text-container {
+    height: 262px;
+    padding: 30px;
+    font-weight: 600;
+    // background-color: rgb(204, 204, 204);
+    margin: auto;
+  }
+
+  .logo-text {
+    margin-top: 30px;
+    font-size: 28px;
+  }
+
+  .sub-logo-text {
+    font-size: 14px;
+  }
+
+  .description-text {
+    color: #ff8601;
+    font-size: 13px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .corousel-text-container {
+    height: 270px;
+    padding: 30px;
+    font-weight: 600;
+    // background-color: rgb(204, 204, 204);
+    margin: auto;
+  }
+
+  .logo-text {
+    margin-top: 30px;
+    font-size: 28px;
+  }
+
+  .sub-logo-text {
+    font-size: 14px;
+  }
+
+  .description-text {
+    color: #ff8601;
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .corousel-text-container {
+    height: 270px;
+    padding: 30px;
+    font-weight: 600;
+    // background-color: rgb(204, 204, 204);
+    margin: auto;
+  }
+
+  .logo-text {
+    margin-top: 30px;
+    font-size: 28px;
+  }
+
+  .sub-logo-text {
+    font-size: 14px;
+  }
+
+  .description-text {
+    color: #ff8601;
+    font-size: 16px;
+  }
+}
